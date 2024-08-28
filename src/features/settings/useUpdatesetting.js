@@ -13,6 +13,7 @@ export function useUpdateSetting() {
     },
     onError: (err) => toast.error(err.message),
   });
+  
   return {
     isUpdating,
     updateSetting,
