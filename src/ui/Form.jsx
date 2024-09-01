@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "./device";
 
 const Form = styled.form`
   ${(props) =>
@@ -13,7 +14,10 @@ const Form = styled.form`
   ${(props) =>
     props.type === "modal" &&
     css`
-      width: 80rem;
+      width: 70rem;
+      @media ${device.mobileL} {
+        width: 100%;
+      }
     `}
     
   
@@ -21,6 +25,6 @@ const Form = styled.form`
 `;
 
 Form.defaultProps = {
-  type :"regular"
-}
+  type: "regular",
+};
 export default Form;

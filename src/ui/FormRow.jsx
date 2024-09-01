@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
+import { device } from "./device";
 
 const StyledFormRow = styled.div`
   display: grid;
@@ -24,6 +25,13 @@ const StyledFormRow = styled.div`
     display: flex;
     justify-content: flex-end;
     gap: 1.2rem;
+  }
+  @media ${device.mobileL} {
+    grid-template-columns: 300px;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    padding: .8rem 1.2rem;
+    
   }
 `;
 

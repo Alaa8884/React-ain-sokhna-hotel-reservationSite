@@ -2,13 +2,28 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import styled from "styled-components";
+import { device } from "./device";
 
 const StyledAppLayout = styled.div`
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 26rem 1fr;
+  grid-template-columns: 35rem 1fr;
   grid-template-rows: auto 1fr;
   overflow-y: hidden;
+
+  /* @media ${device.mobileS} {
+    grid-template-columns: 15rem 1fr;
+  }
+
+  @media ${device.mobileM} {
+  }
+
+  @media ${device.mobileL} {
+  } */
+
+  @media ${device.mobileL} {
+    grid-template-columns: 25rem 1fr;
+  }
 `;
 
 const Main = styled.main`

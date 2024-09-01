@@ -9,6 +9,7 @@ import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
 import styled from "styled-components";
 import { useClickOutside } from "../hooks/useClickOutside";
+import { device } from "./device";
 
 const StyledModal = styled.div`
   position: fixed;
@@ -20,6 +21,10 @@ const StyledModal = styled.div`
   box-shadow: var(--shadow-lg);
   padding: 3.2rem 4rem;
   transition: all 0.5s;
+
+  @media ${device.mobileL} {
+    padding: 1.8rem 2rem;
+  }
 `;
 
 const Overlay = styled.div`
