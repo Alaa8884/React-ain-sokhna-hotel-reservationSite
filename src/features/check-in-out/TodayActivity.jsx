@@ -10,17 +10,17 @@ const StyledToday = styled.div`
   border: 1px solid var(--color-grey-100);
   border-radius: var(--border-radius-md);
 
-  padding: 3.2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.5rem;
   grid-column: 1 / span 2;
   padding-top: 2.4rem;
 `;
 
 const TodayList = styled.ul`
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: auto;
 
   &::-webkit-scrollbar {
     width: 0 !important;

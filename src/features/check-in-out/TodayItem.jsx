@@ -8,7 +8,7 @@ import { Flag } from "../../ui/Flag";
 
 const StyledTodayItem = styled.li`
   display: grid;
-  grid-template-columns: 9rem 2rem 1fr 7rem 9rem;
+  grid-template-columns: 6rem 2rem 1fr 7rem 8rem;
   gap: 1.2rem;
   align-items: center;
 
