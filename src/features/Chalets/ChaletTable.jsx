@@ -17,6 +17,7 @@ function ChaletTable() {
   const filterValue = searchParams.get("discount") || "all";
 
   let filteredChalets;
+  
   if (filterValue === "all") filteredChalets = chalets;
 
   if (filterValue === "no-discount")
