@@ -7,10 +7,6 @@ import { useLogin } from "./useLogin";
 import SpinnerMini from "../../ui/SpinnerMini";
 
 function LoginForm() {
-  // State should be start with empty value but for development prosess i put static account email and password as any developer can access to the dashboard and exprement it's feature
-
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
 
   const [email, setEmail] = useState("yame@test.com");
   const [password, setPassword] = useState("12345678");
